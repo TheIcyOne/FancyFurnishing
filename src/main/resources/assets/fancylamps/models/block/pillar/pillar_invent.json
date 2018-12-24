@@ -1,0 +1,59 @@
+{
+	"textures": {
+		"base": "fancylamps:blocks/pillar/pillar_end",
+		"side": "fancylamps:blocks/pillar/pillar_side",
+		"gilded":  "fancylamps:blocks/pillar/pillar_gilded"
+    },
+	"display": {
+        "gui": {
+            "rotation": [ 30, 135, 0 ],
+            "translation": [ 0, 0, 0],
+            "scale":[ 0.625, 0.625, 0.625 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 90, 0 ],
+            "translation": [ 0, 0, 0],
+            "scale":[ 0.5, 0.5, 0.5 ]
+        }
+    },
+	"parent" : "block/block",
+	"elements": [
+		{
+            "from": [ 1, 2, 1 ], 
+            "to": [ 15, 14, 15 ], 
+            "faces": {
+                "north": { "texture": "#side", "uv": [ 1, 2, 14, 2 ] },
+                "east": { "texture": "#side", "uv": [ 1, 2, 14, 2 ] },
+                "south": { "texture": "#side", "uv": [ 1, 2, 14, 2 ] },
+                "west": { "texture": "#side", "uv": [ 1, 2, 14, 2 ] },
+                "up": { "texture": "#base", "uv": [ 1, 1, 15.0, 15.0 ] },
+                "down": { "texture": "#base", "uv": [ 1, 1, 15.0, 15.0 ] }
+            }
+        },
+		{
+            "from": [ 0, 0, 0 ], 
+            "to": [ 16, 2, 16 ], 
+            "faces": {
+                "north": { "texture": "#gilded", "uv": [ 0, 0, 16, 2 ] },
+                "east": { "texture": "#gilded", "uv": [ 0, 0, 16, 2 ] },
+                "south": { "texture": "#gilded", "uv": [ 0, 0, 16, 2 ] },
+                "west": { "texture": "#gilded", "uv": [ 0, 0, 16, 2 ]},
+                "up": { "texture": "#gilded", "uv": [ 0, 0, 16, 16 ] },
+                "down": { "texture": "#base", "uv": [ 0, 0, 16, 16 ] }
+            }
+        },
+		{
+            "from": [ 0, 14, 0 ], 
+            "to": [ 16, 16, 16 ], 
+            "faces": {
+                "north": { "texture": "#gilded", "uv": [ 0, 0, 16, 2 ] },
+                "east": { "texture": "#gilded", "uv": [ 0, 0, 16, 2 ] },
+                "south": { "texture": "#gilded", "uv": [ 0, 0, 16, 2 ] },
+                "west": { "texture": "#gilded", "uv": [ 0, 0, 16, 2 ]},
+                "up": { "texture": "#base", "uv": [ 0, 0, 16, 16 ] },
+                "down": { "texture": "#gilded", "uv": [ 0, 0, 16, 16 ] }
+            }
+        }
+	]
+
+}

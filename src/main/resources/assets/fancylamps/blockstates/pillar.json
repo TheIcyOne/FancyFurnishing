@@ -1,0 +1,17 @@
+{
+    "multipart": [
+	{ "apply": {"model" : "fancylamps:pillar/pillar_centre"}},
+	{ "when": {"up" : "false"},
+		"apply": {"model": "fancylamps:pillar/pillar_topcap"}
+	},
+	{ "when": {"up" : "true"},
+		"apply": {"model": "fancylamps:pillar/pillar_top"}
+	},
+	{ "when": {"down" : "false"},
+		"apply": {"model": "fancylamps:pillar/pillar_bottomcap"}
+	},
+	{ "when": {"down" : "true"},
+		"apply": {"model": "fancylamps:pillar/pillar_bottom"}
+	}
+	]
+}

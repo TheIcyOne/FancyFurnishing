@@ -1,0 +1,17 @@
+{
+    "multipart": [
+	{ "apply": {"model" : "fancylamps:post/post_centre"}},
+	{ "when": {"up" : "false"},
+		"apply": {"model": "fancylamps:post/post_topcap"}
+	},
+	{ "when": {"up" : "true"},
+		"apply": {"model": "fancylamps:post/post_top"}
+	},
+	{ "when": {"down" : "false"},
+		"apply": {"model": "fancylamps:post/post_bottomcap"}
+	},
+	{ "when": {"down" : "true"},
+		"apply": {"model": "fancylamps:post/post_bottom"}
+	}
+	]
+}

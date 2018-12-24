@@ -1,0 +1,19 @@
+{
+    "multipart": [
+	{ "when": {"gemtype" : "blank"},
+		"apply": { "model": "fancylamps:lamp/lamp_blank" }
+	},
+	{ "when": {"gemtype" : "corrupt"},
+		"apply": { "model": "fancylamps:lamp/lamp_corrupt" }
+	},
+	{ "when": {"gemtype" : "crimson"},
+		"apply": { "model": "fancylamps:lamp/lamp_crimson" }
+	},
+	{ "when": {"gemtype" : "purity"},
+		"apply": { "model": "fancylamps:lamp/lamp_purity" }
+	},
+	{ "when": {"gemtype" : "rainbow"},
+		"apply": { "model": "fancylamps:lamp/lamp_rainbow" }
+	}
+	]
+}

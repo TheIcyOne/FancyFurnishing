@@ -1,0 +1,21 @@
+{
+	"textures": {
+		"1": "fancylamps:blocks/post_stem"
+    },
+	"parent" : "block/block",
+	"elements": [
+		{
+            "from": [ 6.5, 2.0, 6.5 ], 
+            "to": [ 9.5, 14.0, 9.5 ], 
+            "faces": {
+                "north": { "texture": "#1", "uv": [ 0.0, 0.0, 2.0, 14.0 ] },
+                "east": { "texture": "#1", "uv": [ 0.0, 0.0, 2.0, 14.0 ] },
+                "south": { "texture": "#1", "uv": [ 0.0, 0.0, 2.0, 14.0 ] },
+                "west": { "texture": "#1", "uv": [ 0.0, 0.0, 2.0, 14.0 ] },
+                "up": { "texture": "#1", "uv": [ 6.0, 6.0, 10.0, 10.0 ] },
+                "down": { "texture": "#1", "uv": [ 6.0, 6.0, 10.0, 10.0 ] }
+            }
+        }
+	]
+
+}

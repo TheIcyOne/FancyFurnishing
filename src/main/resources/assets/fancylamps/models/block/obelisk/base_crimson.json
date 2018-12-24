@@ -1,0 +1,7 @@
+{
+	"parent" : "fancylamps:block/obelisk/base_blank",
+	"textures": {
+		"particle": "fancylamps:blocks/obelisk/base_crimson",
+        "0": "fancylamps:blocks/obelisk/base_crimson"
+	}
+}

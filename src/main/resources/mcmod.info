@@ -1,0 +1,16 @@
+[
+{
+  "modid": "fancylamps",
+  "name": "Fancy Lamps",
+  "description": "The fanciest lampiest mod you'll ever see. Probably.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["The_Icy_One", "cesar_zorak"],
+  "credits": "cesar_zorak, for the fantastic texturing and modelling work that went into the original.",
+  "logoFile": "mainlogo.png",
+  "screenshots": [],
+  "dependencies": []
+}
+]

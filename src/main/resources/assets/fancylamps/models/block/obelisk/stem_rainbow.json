@@ -1,0 +1,7 @@
+{
+	"parent" : "fancylamps:block/obelisk/stem_blank",
+	"textures": {
+		"particle": "fancylamps:blocks/obelisk/base_rainbow",
+        "0": "fancylamps:blocks/obelisk/base_rainbow"
+	}
+}

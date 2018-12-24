@@ -1,0 +1,8 @@
+{
+	"parent" : "fancylamps:block/lamp/lamp_blank",
+	"textures": {
+		"particle": "fancylamps:blocks/lamp/lamp_purity",
+        "0": "fancylamps:blocks/lamp/lamp_purity",
+        "1": "fancylamps:blocks/lamp/base"
+	}
+}

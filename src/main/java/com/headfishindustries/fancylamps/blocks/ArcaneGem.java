@@ -1,0 +1,20 @@
+package com.headfishindustries.fancylamps.blocks;
+
+import com.headfishindustries.fancylamps.EnumGemType;
+
+import net.minecraft.block.properties.PropertyEnum;
+import net.minecraft.block.state.IBlockState;
+import net.minecraft.util.math.AxisAlignedBB;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.IBlockAccess;
+
+public class ArcaneGem extends AbstractBlockGem{
+	
+
+	public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos)
+    {
+		return new AxisAlignedBB(0.125f, 0f, 0.125f, 0.875f, 2f, 0.875f);
+    }
+
+
+}

@@ -1,0 +1,7 @@
+{
+	"parent" : "fancylamps:block/obelisk/tip_blank",
+	"textures": {
+		"particle": "fancylamps:blocks/obelisk/obelisk_rainbow",
+        "0": "fancylamps:blocks/obelisk/obelisk_rainbow"
+	}
+}

@@ -1,0 +1,8 @@
+{
+	"parent" : "fancylamps:block/obelisk/obelisk_blank",
+	"textures": {
+		"particle": "fancylamps:blocks/obelisk/base_corrupt",
+        "0": "fancylamps:blocks/obelisk/obelisk_corrupt",
+        "1": "fancylamps:blocks/obelisk/base_corrupt"
+	}
+}

@@ -1,0 +1,20 @@
+{
+    "multipart": [
+	{ "apply": {"model" : "fancylamps:arcane_base"}},
+	{ "when": {"gemtype" : "blank"},
+		"apply": {"model": "fancylamps:gem/gem_blank"}
+	},
+	{ "when": {"gemtype" : "corrupt"},
+		"apply": {"model": "fancylamps:gem/gem_corrupt"}
+	},
+	{ "when": {"gemtype" : "crimson"},
+		"apply": {"model": "fancylamps:gem/gem_crimson"}
+	},
+	{ "when": {"gemtype" : "purity"},
+		"apply": {"model": "fancylamps:gem/gem_purity"}
+	},
+	{ "when": {"gemtype" : "rainbow"},
+		"apply": {"model": "fancylamps:gem/gem_rainbow"}
+	}
+	]
+}

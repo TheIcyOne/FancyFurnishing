@@ -1,0 +1,11 @@
+{
+	"_comment": "Dummy file thanks.",
+    "variants": {
+		"normal":[
+			{"model": "fancylamps:arcane_base_block"}
+		],
+		"inventory":[
+			{"model": "fancylamps:arcane_base_block"}
+		]
+	}	
+}

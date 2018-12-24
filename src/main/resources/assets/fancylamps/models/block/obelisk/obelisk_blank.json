@@ -1,0 +1,50 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
+    "textures": {
+        "particle": "fancylamps:blocks/obelisk/base_blank",
+        "0": "fancylamps:blocks/obelisk/obelisk_blank",
+        "1": "fancylamps:blocks/obelisk/base_blank"
+    },
+    "parent": "block/cube_all",
+    "elements": [
+        {
+            "name": "Omega Obelisk",
+            "from": [ 2.0, 0.0, 2.0 ], 
+            "to": [ 14.0, 16.0, 14.0 ], 
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 0.0, 0.0, 6.0, 8.0 ] },
+                "east": { "texture": "#0", "uv": [ 0.0, 0.0, 6.0, 8.0 ] },
+                "south": { "texture": "#0", "uv": [ 0.0, 0.0, 6.0, 8.0 ] },
+                "west": { "texture": "#0", "uv": [ 0.0, 0.0, 6.0, 8.0 ] },
+                "up": { "texture": "#0", "uv": [ 6.0, 8.0, 12.0, 14.0 ] },
+                "down": { "texture": "#0", "uv": [ 0.0, 8.0, 6.0, 14.0 ] }
+            }
+        },
+        {
+            "name": "Omega Obelisk",
+            "from": [ 3.0, 16.0, 3.0 ], 
+            "to": [ 13.0, 32.0, 13.0 ], 
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 6.0, 0.0, 11.0, 8.0 ] },
+                "east": { "texture": "#0", "uv": [ 6.0, 0.0, 11.0, 8.0 ] },
+                "south": { "texture": "#0", "uv": [ 6.0, 0.0, 11.0, 8.0 ] },
+                "west": { "texture": "#0", "uv": [ 6.0, 0.0, 11.0, 8.0 ] },
+                "up": { "texture": "#0", "uv": [ 11.0, 0.0, 16.0, 5.0 ] },
+                "down": { "texture": "#0", "uv": [ 11.0, 0.0, 16.0, 5.0 ] }
+            }
+        },
+        {
+            "name": "Omega Obelisk",
+            "from": [ 4.0, 32.0, 4.0 ], 
+            "to": [ 12.0, 48.0, 12.0 ], 
+            "faces": {
+                "north": { "texture": "#1", "uv": [ 0.0, 0.0, 8.0, 16.0 ] },
+                "east": { "texture": "#1", "uv": [ 0.0, 0.0, 8.0, 16.0 ] },
+                "south": { "texture": "#1", "uv": [ 0.0, 0.0, 8.0, 16.0 ] },
+                "west": { "texture": "#1", "uv": [ 0.0, 0.0, 8.0, 16.0 ] },
+                "up": { "texture": "#1", "uv": [ 8.0, 0.0, 16.0, 8.0 ] },
+                "down": { "texture": "#1", "uv": [ 8.0, 0.0, 16.0, 8.0 ] }
+            }
+        }
+    ]
+}

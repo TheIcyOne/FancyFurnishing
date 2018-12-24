@@ -1,0 +1,23 @@
+{
+	"textures": {
+		"base": "fancylamps:blocks/pillar/pillar_end",
+		"side": "fancylamps:blocks/pillar/pillar_side",
+		"gilded":  "fancylamps:blocks/pillar/pillar_gilded"
+    },
+	"parent" : "block/block",
+	"elements": [
+		{
+            "from": [ 0, 14, 0 ], 
+            "to": [ 16, 16, 16 ], 
+            "faces": {
+                "north": { "texture": "#gilded", "uv": [ 0, 0, 16, 2 ] },
+                "east": { "texture": "#gilded", "uv": [ 0, 0, 16, 2 ] },
+                "south": { "texture": "#gilded", "uv": [ 0, 0, 16, 2 ] },
+                "west": { "texture": "#gilded", "uv": [ 0, 0, 16, 2 ]},
+                "up": { "texture": "#base", "uv": [ 0, 0, 16, 16 ] },
+                "down": { "texture": "#gilded", "uv": [ 0, 0, 16, 16 ] }
+            }
+        }
+	]
+
+}

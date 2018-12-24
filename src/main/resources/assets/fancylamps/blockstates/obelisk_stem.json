@@ -1,0 +1,19 @@
+{
+    "multipart": [
+	{ "when": {"gemtype" : "blank"},
+		"apply": {"model": "fancylamps:obelisk/stem_blank"}
+	},
+	{ "when": {"gemtype" : "corrupt"},
+		"apply": {"model": "fancylamps:obelisk/stem_corrupt"}
+	},
+	{ "when": {"gemtype" : "crimson"},
+		"apply": {"model": "fancylamps:obelisk/stem_crimson"}
+	},
+	{ "when": {"gemtype" : "purity"},
+		"apply": {"model": "fancylamps:obelisk/stem_purity"}
+	},
+	{ "when": {"gemtype" : "rainbow"},
+		"apply": {"model": "fancylamps:obelisk/stem_rainbow"}
+	}
+	]
+}
