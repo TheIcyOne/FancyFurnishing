@@ -32,7 +32,7 @@ public class RenderEnderGem extends TileEntitySpecialRenderer<TileEnderGem>{
 				//GlStateManager.translate(-0.5, -0.5, -0.5);
 				
 				GlStateManager.pushMatrix();{
-					model.renderGem((Minecraft.getMinecraft().world.getWorldTime() + partial) * 0.075f);
+					model.renderGem((float) ((Minecraft.getMinecraft().world.getWorldTime() + partial) * 0.075f + ob.getPos().hashCode()));
 				}
 				GlStateManager.popMatrix();
 			}
