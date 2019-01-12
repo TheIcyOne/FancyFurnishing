@@ -1,6 +1,7 @@
 {
 	"textures": {
-		"0": "fancylamps:blocks/post"
+		"0": "fancylamps:blocks/post",
+		"particle": "fancylamps:blocks/post"
     },
 	"parent" : "block/block",
 	"elements": [

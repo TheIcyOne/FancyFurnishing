@@ -1,5 +1,5 @@
 {
-	"parent": "fancylamps:block/gem_blank",
+	"parent": "fancylamps:block/gem/gem_blank",
 	"textures": {
 		"gem": "fancylamps:blocks/gem/gem_purity"
     }

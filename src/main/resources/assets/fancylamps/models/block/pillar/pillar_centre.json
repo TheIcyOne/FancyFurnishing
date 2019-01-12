@@ -2,7 +2,8 @@
 	"textures": {
 		"base": "fancylamps:blocks/pillar/pillar_end",
 		"side": "fancylamps:blocks/pillar/pillar_side",
-		"gilded":  "fancylamps:blocks/pillar/pillar_gilded"
+		"gilded":  "fancylamps:blocks/pillar/pillar_gilded",
+		"particle": "fancylamps:blocks/pillar/pillar_side"
     },
 	"parent" : "block/block",
 	"elements": [

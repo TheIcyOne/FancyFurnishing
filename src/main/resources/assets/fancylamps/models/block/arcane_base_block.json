@@ -1,6 +1,7 @@
 {
 	"parent": "block/cube_all",
 	"textures": {
-		"all": "fancylamps:blocks/arcane_base"
+		"all": "fancylamps:blocks/arcane_base",
+		"particle": "fancylamps:blocks/arcane_base"
 	}
 }

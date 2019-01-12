@@ -1,6 +1,7 @@
 {
 	"parent": "block/cube_all",
 	"textures": {
-		"all": "fancylamps:blocks/arcane_base_chisel"
+		"all": "fancylamps:blocks/arcane_base_chisel",
+		"particle": "fancylamps:blocks/arcane_base_chisel"
 	}
 }

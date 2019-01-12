@@ -1,7 +1,8 @@
 {
 	"_comment": "Adapted from original model created in MrCrayfish's Model Creator by cesar_zorak.",
 	"textures": {
-		"base": "fancylamps:blocks/arcane_base"
+		"base": "fancylamps:blocks/arcane_base",
+		"particle": "fancylamps:blocks/gem/gem_blank"
     },
 	"parent" : "block/block",
 	"elements": [
