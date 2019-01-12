@@ -7,8 +7,6 @@ import org.lwjgl.opengl.GL11;
 import com.headfishindustries.fancylamps.FancyLamps;
 import com.headfishindustries.fancylamps.blocks.model.ModelEnderGem;
 import com.headfishindustries.fancylamps.blocks.tile.TileEnderGem;
-import com.headfishindustries.fancylamps.blocks.tile.TileObelisk;
-
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
@@ -29,7 +27,6 @@ public class RenderEnderGem extends TileEntitySpecialRenderer<TileEnderGem>{
 			GlStateManager.pushMatrix();
 			{
 				Minecraft.getMinecraft().renderEngine.bindTexture(gemTexture);
-				//GlStateManager.translate(-0.5, -0.5, -0.5);
 				
 				GlStateManager.pushMatrix();{
 					model.renderGem((float) ((Minecraft.getMinecraft().world.getWorldTime() + partial) * 0.075f + ob.getPos().hashCode()));

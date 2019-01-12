@@ -1,8 +1,5 @@
 package com.headfishindustries.fancylamps.blocks;
 
-import com.headfishindustries.fancylamps.EnumGemType;
-
-import net.minecraft.block.properties.PropertyEnum;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
