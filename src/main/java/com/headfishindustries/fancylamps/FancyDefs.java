@@ -46,8 +46,8 @@ public class FancyDefs {
 		this.pillar = new BlockPillar().setRegistryName(new ResourceLocation(FancyLamps.MODID, "pillar")).setUnlocalizedName("pillar");
 		this.post = new BlockPost().setRegistryName(new ResourceLocation(FancyLamps.MODID, "post")).setUnlocalizedName("post");
 		this.enderGem = new EnderCrystalGem().setRegistryName(new ResourceLocation(FancyLamps.MODID, "ender_gem")).setUnlocalizedName("ender_gem").setLightLevel(1f);
-		this.arcaneBase = new Block(Material.ROCK, MapColor.BLACK).setRegistryName(new ResourceLocation(FancyLamps.MODID, "arcane_base")).setUnlocalizedName("arcane_base").setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
-		this.arcaneBaseChiselled = new Block(Material.ROCK, MapColor.ORANGE_STAINED_HARDENED_CLAY).setRegistryName(new ResourceLocation(FancyLamps.MODID, "arcane_base_chisel")).setUnlocalizedName("arcane_base_chisel").setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
+		this.arcaneBase = new Block(Material.ROCK, MapColor.BLACK).setRegistryName(new ResourceLocation(FancyLamps.MODID, "arcane_base")).setUnlocalizedName("arcane_base").setCreativeTab(CreativeTabs.BUILDING_BLOCKS).setHardness(1.0f);
+		this.arcaneBaseChiselled = new Block(Material.ROCK, MapColor.ORANGE_STAINED_HARDENED_CLAY).setRegistryName(new ResourceLocation(FancyLamps.MODID, "arcane_base_chisel")).setUnlocalizedName("arcane_base_chisel").setHardness(1.0f).setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
 		
 		this.itemGem = new AbstractBlockGem.ItemBlockGem(this.gem).setRegistryName(new ResourceLocation(FancyLamps.MODID, "arcane_gem"));
 		this.itemObelisk = new AbstractBlockGem.ItemBlockGem(this.obeliskBase).setRegistryName(new ResourceLocation(FancyLamps.MODID, "obelisk"));
