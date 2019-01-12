@@ -1,12 +1,7 @@
 package com.headfishindustries.fancylamps;
 
-import com.headfishindustries.fancylamps.blocks.render.RenderItemEnderGem;
-
 import net.minecraft.block.Block;
-import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
-import net.minecraftforge.client.event.ModelRegistryEvent;
-import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -49,22 +44,7 @@ public class FancyLamps {
 		DEFS.registerItems(event);
 	}
 	
-	@SubscribeEvent
-    public static void registerModels(ModelRegistryEvent event) {
-		for (EnumGemType t : EnumGemType.values()) {
-			ModelLoader.setCustomModelResourceLocation(DEFS.itemGem, t.getMeta(), new ModelResourceLocation(MODID + ":gem_" + t.getName(), "inventory"));
-			ModelLoader.setCustomModelResourceLocation(DEFS.itemObelisk, t.getMeta(), new ModelResourceLocation(MODID + ":obelisk_" + t.getName(), "inventory"));
-			ModelLoader.setCustomModelResourceLocation(DEFS.itemLamp, t.getMeta(), new ModelResourceLocation(MODID + ":lamp_" + t.getName(), "inventory"));
-		}
-		
-		ModelLoader.setCustomModelResourceLocation(DEFS.itemPillar, 0, new ModelResourceLocation(MODID + ":pillar", "inventory"));
-		ModelLoader.setCustomModelResourceLocation(DEFS.itemPost, 0, new ModelResourceLocation(MODID + ":post", "inventory"));
-		ModelLoader.setCustomModelResourceLocation(DEFS.itemArcaneBase, 0, new ModelResourceLocation(MODID + ":arcane_base_block", "inventory"));
-		ModelLoader.setCustomModelResourceLocation(DEFS.itemArcaneBaseChiselled, 0, new ModelResourceLocation(MODID + ":arcane_base_chisel", "inventory"));
-		
-		FancyLamps.DEFS.itemEnderGem.setTileEntityItemStackRenderer(new RenderItemEnderGem());
-		ModelLoader.setCustomModelResourceLocation(DEFS.itemEnderGem, 0, new ModelResourceLocation(MODID + ":teisr_ender_gem", "inventory"));
-	}
+	
 }
 
 
