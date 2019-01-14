@@ -1,0 +1,27 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+    [
+        "nsn",
+        "s s",
+        "nsn"
+    ],
+    "key":
+    {
+        "n":
+        {
+            "type": "forge:ore_dict",
+            "ore": "nuggetGold"
+        },
+        "s":
+        {
+			"type": "forge:ore_dict",
+            "ore": "stone"
+        }
+    },
+    "result":
+    {
+        "item": "fancylamps:arcane_base",
+		"count": 8
+    }
+}

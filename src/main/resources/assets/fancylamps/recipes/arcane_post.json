@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+    [
+        "sss",
+		" s ",
+		"sss"
+    ],
+    "key":
+    {
+        "s":
+        {
+			"item":"fancylamps:arcane_base"
+        }
+    },
+    "result":
+    {
+        "item": "fancylamps:post",
+		"count": 8
+    }
+}

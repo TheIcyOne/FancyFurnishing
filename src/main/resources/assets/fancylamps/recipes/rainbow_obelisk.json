@@ -1,0 +1,32 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+    [
+        " l ",
+        "nln",
+        "sss"
+    ],
+    "key":
+    {
+        "n":
+        {
+            "type": "forge:ore_dict",
+            "ore": "nuggetGold"
+        },
+		"s":
+		{
+			"item": "fancylamps:arcane_base"
+		},
+		"l":
+		{
+			"item": "fancylamps:arcane_gem",
+			"data": 4
+		}
+    },
+    "result":
+    {
+        "item": "fancylamps:obelisk",
+		"data": 4,
+		"count": 6
+    }
+}

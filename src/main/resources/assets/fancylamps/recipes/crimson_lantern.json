@@ -1,0 +1,36 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+    [
+        "sgs",
+        "cbc",
+        "sgs"
+    ],
+    "key":
+    {
+        "c":
+        {
+            "type": "forge:ore_dict",
+            "ore": "blockGlass"
+        },
+        "g":
+        {
+            "item": "minecraft:glowstone"
+        },
+		"s":
+		{
+			"item": "fancylamps:arcane_base"
+		},
+		"b":
+		{
+			"type": "forge:ore_dict",
+            "ore": "cropNetherWart"
+		}
+    },
+    "result":
+    {
+        "item": "fancylamps:lamp",
+		"data": 1,
+		"count": 6
+    }
+}

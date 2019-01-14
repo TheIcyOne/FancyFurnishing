@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+    [
+        "xxx",
+        "xax",
+        "xxx"
+    ],
+    "key":
+    {
+        "x":
+        {
+            "type": "forge:ore_dict",
+            "ore": "blockGlass"
+        },
+        "a":
+        {
+            "item": "minecraft:ender_eye"
+        }
+    },
+    "result":
+    {
+        "item": "fancylamps:ender_gem"
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+    [
+        "bb",
+        "bb"
+    ],
+    "key":
+    {
+        "b":
+        {
+            "item": "fancylamps:arcane_base"
+        }
+    },
+    "result":
+    {
+        "item": "fancylamps:arcane_base_chisel",
+		"count": 4
+    }
+}
