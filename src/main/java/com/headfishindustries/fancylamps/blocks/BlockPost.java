@@ -72,6 +72,6 @@ public class BlockPost extends Block{
 	@Override
 	public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos)
     {
-		return new AxisAlignedBB(0.4, 0, 0.4, 0.6, 1, 0.6);	
+		return new AxisAlignedBB(0.40625, 0, 0.40625, 0.59375, 1, 0.59375);	
     }
 }
