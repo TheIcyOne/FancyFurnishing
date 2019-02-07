@@ -1,0 +1,27 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+    [
+        "nnn",
+        "ntn",
+        "nnn"
+    ],
+    "key":
+    {
+        "n":
+        {
+            "type": "forge:ore_dict",
+            "ore": "nuggetIron"
+        },
+        "t":
+        {
+            "item": "minecraft:redstone_torch"
+        }
+    },
+    "result":
+    {
+        "item": "fancylamps:lantern_redstone",
+		"data": 0,
+		"count": 1
+    }
+}

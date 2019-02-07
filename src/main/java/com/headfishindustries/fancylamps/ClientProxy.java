@@ -46,6 +46,10 @@ public class ClientProxy extends CommonProxy {
 			ModelLoader.setCustomModelResourceLocation(FancyLamps.DEFS.itemArcaneBase, 0, new ModelResourceLocation(FancyLamps.MODID + ":arcane_base_block", "inventory"));
 			ModelLoader.setCustomModelResourceLocation(FancyLamps.DEFS.itemArcaneBaseChiselled, 0, new ModelResourceLocation(FancyLamps.MODID + ":arcane_base_chisel", "inventory"));
 			
+			ModelLoader.setCustomModelResourceLocation(FancyLamps.DEFS.itemLanternTorch, 0, new ModelResourceLocation(FancyLamps.MODID + ":lantern_torch", "inventory"));
+			ModelLoader.setCustomModelResourceLocation(FancyLamps.DEFS.itemLanternRedstone, 0, new ModelResourceLocation(FancyLamps.MODID + ":lantern_redstone", "inventory"));
+
+			
 			FancyLamps.DEFS.itemEnderGem.setTileEntityItemStackRenderer(new RenderItemEnderGem());
 			ModelLoader.setCustomModelResourceLocation(FancyLamps.DEFS.itemEnderGem, 0, new ModelResourceLocation(FancyLamps.MODID + ":teisr_ender_gem", "inventory"));
 		}

@@ -1,0 +1,8 @@
+{
+	"parent": "fancylamps:block/lantern_torch",
+    "textures": {
+        "particle": "fancylamps:blocks/lantern/lantern_redstone",
+        "0": "fancylamps:blocks/lantern/lantern_redstone",
+        "1": "fancylamps:blocks/lantern/chain"
+    }
+}

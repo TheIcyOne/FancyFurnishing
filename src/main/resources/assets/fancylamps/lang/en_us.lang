@@ -21,3 +21,5 @@ lamp_corrupt.name=Corrupt Lamp
 lamp_crimson.name=Crimson Lamp
 lamp_purity.name=Pure Lamp
 lamp_rainbow.name=Rainbow Lamp
+tile.lantern_torch.name=Lantern
+tile.lantern_redstone.name=Redstone Lantern

@@ -1,0 +1,7 @@
+{
+    "variants": {
+		"normal":[
+			{"model": "fancylamps:lantern_torch"}
+		]
+	}	
+}
