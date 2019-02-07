@@ -1,5 +1,7 @@
 package com.headfishindustries.fancylamps.blocks;
 
+import java.util.Random;
+
 import com.headfishindustries.fancylamps.EnumGemType;
 
 import net.minecraft.block.Block;
@@ -11,24 +13,20 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.EnumParticleTypes;
 import net.minecraft.util.NonNullList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public abstract class AbstractBlockGem extends Block{
+public abstract class AbstractBlockGem extends AbstractBlockLamp{
 	
 	public static PropertyEnum<EnumGemType> GEM_TYPE = PropertyEnum.create("gemtype", EnumGemType.class);
 
 	public AbstractBlockGem() {
 		super(Material.GLASS);
-		this.translucent = true;
 		this.blockResistance = 8f;
 		this.blockHardness = 0.2f;
-		this.setLightOpacity(0);
-		this.setLightLevel(1.0f);
-		this.setHarvestLevel("pickaxe", 1);
-		this.setCreativeTab(CreativeTabs.DECORATIONS);
 		this.setDefaultState(this.blockState.getBaseState().withProperty(GEM_TYPE, EnumGemType.BLANK));
 	}
 		
@@ -40,27 +38,36 @@ public abstract class AbstractBlockGem extends Block{
 		}
 	}
 	
-	
+	@Override
+	public void randomDisplayTick(IBlockState stateIn, World world, BlockPos pos, Random rand) {
+		super.randomDisplayTick(stateIn, world, pos, rand);
+		world.spawnParticle(EnumParticleTypes.PORTAL, pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5, rand.nextDouble() - 1.0, rand.nextDouble() - 1.0, rand.nextDouble() - 1.0, Block.getStateId(stateIn));
+/*		switch((EnumGemType) stateIn.getProperties().get(GEM_TYPE)) {
+		case BLANK:
+			world.spawnParticle(EnumParticleTypes.CRIT, pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5, rand.nextDouble() - 1.0, rand.nextDouble() - 1.0, rand.nextDouble() - 1.0, 0);
+			break;
+		case CORRUPT:
+			world.spawnParticle(EnumParticleTypes.PORTAL, pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5, rand.nextDouble() - 1.0, rand.nextDouble() - 1.0, rand.nextDouble() - 1.0, 0);
+			break;
+		case CRIMSON:
+			world.spawnParticle(EnumParticleTypes.REDSTONE, pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5, rand.nextDouble() - 1.0, rand.nextDouble() - 1.0, rand.nextDouble() - 1.0, 0);
+			break;
+		case PURITY:
+			world.spawnParticle(EnumParticleTypes.DRAGON_BREATH, pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5, rand.nextDouble() - 1.0, rand.nextDouble() - 1.0, rand.nextDouble() - 1.0, 0);
+			break;
+		case RAINBOW:
+			world.spawnParticle(EnumParticleTypes.END_ROD, pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5, rand.nextDouble() - 1.0, rand.nextDouble() - 1.0, rand.nextDouble() - 1.0, 0);
+			break;
+		default:
+			break;
+		
+		}*/
+	}
 	
 	@Override
     public int damageDropped(IBlockState state) {
         return getMetaFromState(state);
 	}
-	
-	public boolean isOpaqueCube(IBlockState state)
-    {
-        return false;
-    }
-
-    public boolean isFullCube(IBlockState state)
-    {
-        return false;
-    }
-
-    public boolean isPassable(IBlockAccess worldIn, BlockPos pos)
-    {
-        return false;
-    }
     
     @Override
     protected BlockStateContainer createBlockState() {

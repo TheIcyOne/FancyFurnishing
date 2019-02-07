@@ -1,6 +1,7 @@
 {
 	"parent": "fancylamps:block/gem/gem_blank",
 	"textures": {
-		"gem": "fancylamps:blocks/gem/gem_crimson"
+		"gem": "fancylamps:blocks/gem/gem_crimson",
+		"particle": "fancylamps:blocks/gem/gem_crimson"
     }
 }

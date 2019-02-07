@@ -1,6 +1,7 @@
 {
 	"parent": "fancylamps:block/gem/gem_blank",
 	"textures": {
-		"gem": "fancylamps:blocks/gem/gem_corrupt"
+		"gem": "fancylamps:blocks/gem/gem_corrupt",
+		"particle": "fancylamps:blocks/gem/gem_corrupt"
     }
 }
