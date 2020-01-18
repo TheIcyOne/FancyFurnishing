@@ -1,0 +1,9 @@
+{
+  "parameters": {},
+  "clips": {
+    "default": [ "apply", "fancylamps:block/floating_candle@default", "#move" ]
+  },
+  "states": [ "default" ],
+  "transitions": {},
+  "start_state": "default"
+}

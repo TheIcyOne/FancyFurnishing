@@ -3,6 +3,7 @@ package com.headfishindustries.fancylamps.blocks;
 import java.util.Random;
 
 import com.headfishindustries.fancylamps.EnumGemType;
+import com.headfishindustries.fancylamps.FancyDefs;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -32,7 +33,7 @@ public abstract class AbstractBlockGem extends AbstractBlockLamp{
 		
 	@Override
 	public void getSubBlocks(CreativeTabs tab, NonNullList<ItemStack> items) {
-		if (tab != CreativeTabs.DECORATIONS) return;
+		if (tab != FancyDefs.FANCY_TAB) return;
 		for (EnumGemType gem : EnumGemType.values()) {
 			items.add(new ItemStack(this, 1, gem.getMeta()));
 		}

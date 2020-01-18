@@ -1,0 +1,35 @@
+{
+	"textures":{
+		"tex": "fancylamps:blocks/candle"
+	},
+    "elements": [
+		{
+			"comment": "stem",
+			"from": [6, 0, 6],
+			"to": [10, 8, 10],
+			"shade":true,
+			"faces":{
+				"south": {"tintindex": 1, "uv": [ 0, 0, 8, 12 ], "texture": "#tex" },
+				"north": {"tintindex": 1, "uv": [ 0, 0, 8, 12 ], "texture": "#tex" },
+				"east": {"tintindex": 1, "uv": [ 0, 0, 8, 12 ], "texture": "#tex" },
+				"west": {"tintindex": 1, "uv": [ 0, 0, 8, 12 ], "texture": "#tex" },
+				"up": {"tintindex": 1, "uv": [ 8, 0, 16, 8 ], "texture": "#tex" },
+				"down": {"tintindex": 1, "uv": [ 8, 8, 16, 16 ], "texture": "#tex" }
+			}
+		},
+		{	
+			"comment": "wick",
+			"from": [7.5, 8, 7.5],
+			"to": [8.5, 10, 8.5],
+			"shade":false,
+			"faces":{
+				"south": {"tintindex": 0, "uv": [ 0, 14, 1, 16 ], "texture": "#tex" },
+				"north": {"tintindex": 0, "uv": [ 0, 14, 1, 16 ], "texture": "#tex" },
+				"east": {"tintindex": 0, "uv": [ 0, 14, 1, 16 ], "texture": "#tex" },
+				"west": {"tintindex": 0, "uv": [ 0, 14, 1, 16 ], "texture": "#tex" },
+				"up": {"tintindex": 0, "uv": [ 0, 14, 1, 15 ], "texture": "#tex" },
+				"down": {"tintindex": 0, "uv": [ 0, 15, 1, 16 ], "texture": "#tex" }
+			}
+		}
+    ]
+}

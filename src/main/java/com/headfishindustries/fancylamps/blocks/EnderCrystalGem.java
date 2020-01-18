@@ -1,5 +1,6 @@
 package com.headfishindustries.fancylamps.blocks;
 
+import com.headfishindustries.fancylamps.FancyDefs;
 import com.headfishindustries.fancylamps.blocks.tile.TileEnderGem;
 
 import net.minecraft.block.Block;
@@ -22,7 +23,7 @@ public class EnderCrystalGem extends Block implements ITileEntityProvider{
 		this.setLightOpacity(0);
 		this.setLightLevel(16f);
 		this.setHarvestLevel("pickaxe", 0);
-		this.setCreativeTab(CreativeTabs.DECORATIONS);
+		this.setCreativeTab(FancyDefs.FANCY_TAB);
 	}
 
 	@Override

@@ -14,6 +14,8 @@ public class BlockLantern114 extends AbstractBlockLamp{
 	public BlockLantern114(boolean isRedstone) {
 		super(Material.IRON);
 		this.isRedstoneLamp = isRedstone;
+		this.setHardness(0.2f);
+		this.setHarvestLevel("pickaxe", 0);
 	}
 	
 	public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos)

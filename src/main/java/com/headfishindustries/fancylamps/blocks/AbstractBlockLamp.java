@@ -1,5 +1,7 @@
 package com.headfishindustries.fancylamps.blocks;
 
+import com.headfishindustries.fancylamps.FancyDefs;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
@@ -17,7 +19,7 @@ public class AbstractBlockLamp extends Block{
 		this.setLightOpacity(0);
 		this.translucent = true;
 		this.setHarvestLevel("pickaxe", 1);
-		this.setCreativeTab(CreativeTabs.DECORATIONS);
+		this.setCreativeTab(FancyDefs.FANCY_TAB);
 		this.setLightLevel(1f);
 	}
 	
