@@ -1,6 +1,7 @@
 {
 	"textures":{
-		"tex": "fancylamps:blocks/candle"
+		"tex": "fancylamps:blocks/candle",
+		"particle": "fancylamps:blocks/candle"
 	},
     "elements": [
 		{

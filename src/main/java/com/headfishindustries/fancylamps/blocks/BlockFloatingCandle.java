@@ -1,43 +1,27 @@
 package com.headfishindustries.fancylamps.blocks;
 
-import java.util.List;
-import java.util.Random;
-
 import javax.annotation.Nullable;
 
 import com.headfishindustries.fancylamps.FancyDefs;
-import com.headfishindustries.fancylamps.blocks.tile.TileCandle;
 import com.headfishindustries.fancylamps.blocks.tile.TileFloatingCandle;
 
-import net.minecraft.block.Block;
 import net.minecraft.block.BlockColored;
-import net.minecraft.block.BlockTallGrass;
-import net.minecraft.block.BlockTorch;
-import net.minecraft.block.ITileEntityProvider;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.IProperty;
-import net.minecraft.block.properties.PropertyEnum;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.renderer.color.IBlockColor;
 import net.minecraft.client.renderer.color.IItemColor;
-import net.minecraft.client.util.ITooltipFlag;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.EnumDyeColor;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
-import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.EnumActionResult;
 import net.minecraft.util.EnumBlockRenderType;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
-import net.minecraft.util.EnumParticleTypes;
-import net.minecraft.util.NonNullList;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
@@ -48,11 +32,9 @@ import net.minecraftforge.common.property.ExtendedBlockState;
 import net.minecraftforge.common.property.IUnlistedProperty;
 import net.minecraftforge.common.property.Properties;
 import net.minecraftforge.fml.common.Optional;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
 
 @Optional.Interface(modid="thaumcraft", iface = "thaumcraft.api.crafting.IInfusionStabiliserExt", striprefs = true)
-public class BlockFloatingCandle extends BlockColored implements IInfusionStabiliserExt, IBlockColor{
+public class BlockFloatingCandle extends BlockColored implements IInfusionStabiliserExt, INeedACommonBlockColour{
 	
 	protected static final AxisAlignedBB AABB = new AxisAlignedBB(4/16, 0, 4/16, 12/16, 12/16, 12/16);
 	
@@ -130,7 +112,7 @@ public class BlockFloatingCandle extends BlockColored implements IInfusionStabil
 	}
 
 	
-	public static class ItemFloatingCandle extends ItemBlock implements IItemColor{
+	public static class ItemFloatingCandle extends ItemBlock implements INeedACommonItemColour{
 
 		public ItemFloatingCandle(BlockFloatingCandle block) {
 			super(block);

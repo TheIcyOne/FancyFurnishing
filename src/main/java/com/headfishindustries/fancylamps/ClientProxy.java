@@ -1,5 +1,7 @@
 package com.headfishindustries.fancylamps;
 
+import com.headfishindustries.fancylamps.blocks.INeedACommonBlockColour;
+import com.headfishindustries.fancylamps.blocks.INeedACommonItemColour;
 import com.headfishindustries.fancylamps.blocks.render.RenderEnderGem;
 import com.headfishindustries.fancylamps.blocks.render.RenderItemEnderGem;
 import com.headfishindustries.fancylamps.blocks.tile.TileEnderGem;
@@ -39,8 +41,8 @@ public class ClientProxy extends CommonProxy {
 		super.init(e);
 
     	final IBlockColor blockColourHandler = (state, blockAccess, pos, tintIndex) -> {
-    		if (blockAccess != null && pos != null && state !=null && blockAccess.getBlockState(pos).getBlock() instanceof IBlockColor) {
-    			IBlockColor block = (IBlockColor) (blockAccess.getBlockState(pos).getBlock());
+    		if (blockAccess != null && pos != null && state !=null && blockAccess.getBlockState(pos).getBlock() instanceof INeedACommonBlockColour) {
+    			INeedACommonBlockColour block = (INeedACommonBlockColour) (blockAccess.getBlockState(pos).getBlock());
     			return block.colorMultiplier(state, blockAccess, pos, tintIndex);
     		}
 
@@ -48,8 +50,8 @@ public class ClientProxy extends CommonProxy {
     	};
     	
     	final IItemColor itemColourHandler = (stack, meta) -> {
-    		if (stack != null && stack.getItem() != null && stack.getItem() instanceof IItemColor){
-    			IItemColor item = (IItemColor) stack.getItem();
+    		if (stack != null && stack.getItem() != null && stack.getItem() instanceof INeedACommonItemColour){
+    			INeedACommonItemColour item = (INeedACommonItemColour) stack.getItem();
     			return item.colorMultiplier(stack, 1);
     		}
     		return 0xFFFFFF;
